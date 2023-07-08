@@ -1,6 +1,7 @@
+const basePath = 'https://geo-notice-4b2331a7d3bf.herokuapp.com'
 
 export const postOneChat = async (chatData: any) => {
-  const url = `http://localhost:4000/api/chat`;
+  const url = `${basePath}/api/chat`;
   const res = await fetch(url, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
@@ -12,7 +13,7 @@ export const postOneChat = async (chatData: any) => {
 
 export const getAllChat = async (id: string) => {
 
-  const url = `http://localhost:4000/api/chat/${id}`;
+  const url = `${basePath}/api/chat/${id}`;
   const res = await fetch(url, {
     method: 'GET',
     headers: { 'Content-Type': 'application/json' },
