@@ -2,13 +2,13 @@
   "name": "notice-board-client",
   "version": "0.0.1",
   "type": "module",
-  "homepage": "https://gustavolmo.github.io/geo-notice-CLIENT/",
+  "homepage": "https://gustavolmo.github.io",
   "scripts": {
     "dev": "vite --host",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "deploy": "gh-pages -d dist",
-    "predeploy": "npm run build"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "dotenv": "^16.3.1",
